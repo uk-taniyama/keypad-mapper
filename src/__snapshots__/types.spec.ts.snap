@@ -1,0 +1,69 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`types > mouse 1`] = `
+{
+  "LButton": {
+    "button": 1,
+    "modKey": 0,
+    "wheel": 0,
+    "x": 0,
+    "y": 0,
+  },
+  "MButton": {
+    "button": 4,
+    "modKey": 0,
+    "wheel": 0,
+    "x": 0,
+    "y": 0,
+  },
+  "MoveDown": {
+    "button": 0,
+    "modKey": 0,
+    "wheel": 0,
+    "x": 0,
+    "y": 1,
+  },
+  "MoveLeft": {
+    "button": 0,
+    "modKey": 0,
+    "wheel": 0,
+    "x": 255,
+    "y": 0,
+  },
+  "MoveRight": {
+    "button": 0,
+    "modKey": 0,
+    "wheel": 0,
+    "x": 1,
+    "y": 0,
+  },
+  "MoveUp": {
+    "button": 0,
+    "modKey": 0,
+    "wheel": 0,
+    "x": 0,
+    "y": 255,
+  },
+  "RButton": {
+    "button": 2,
+    "modKey": 0,
+    "wheel": 0,
+    "x": 0,
+    "y": 0,
+  },
+  "WheelDown": {
+    "button": 0,
+    "modKey": 0,
+    "wheel": 255,
+    "x": 0,
+    "y": 0,
+  },
+  "WheelUp": {
+    "button": 0,
+    "modKey": 0,
+    "wheel": 1,
+    "x": 0,
+    "y": 0,
+  },
+}
+`;

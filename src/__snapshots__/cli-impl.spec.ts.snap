@@ -1,0 +1,77 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`executeKeypadTask > detectKeypad > Error:0 1`] = `"ConfigurationError: cannot find the keypad device"`;
+
+exports[`executeKeypadTask > detectKeypad > Error:2 1`] = `"ConfigurationError: cannot detect the keypad device. Use the '--path' option to specify its path"`;
+
+exports[`executeKeypadTask > resolveKeyId > Error:{ keyId: +0 } 1`] = `"ConfigurationError: invalid key ID: 0. It must be between 1 and 6"`;
+
+exports[`executeKeypadTask > resolveKeyId > Error:{ keyId: 7 } 1`] = `"ConfigurationError: invalid key ID: 7. It must be between 1 and 6"`;
+
+exports[`executeKeypadTask > resolveKeyId > Error:{ knobAction: 'Left' } 1`] = `"ConfigurationError: cannot resolve the key ID. Specify either '--key-id' or both '--knob-id' and '--knob-action'"`;
+
+exports[`executeKeypadTask > resolveKeyId > Error:{ knobId: +0, knobAction: 'Left' } 1`] = `"ConfigurationError: invalid knob ID: 0. It must be between 1 and 1"`;
+
+exports[`executeKeypadTask > resolveKeyId > Error:{ knobId: 1 } 1`] = `"ConfigurationError: cannot resolve the key ID. Specify either '--key-id' or both '--knob-id' and '--knob-action'"`;
+
+exports[`executeKeypadTask > resolveKeyId > Error:{ knobId: 1, knobAction: 'Unknown' } 1`] = `"ConfigurationError: cannot process the knob action: 'Unknown' is invalid"`;
+
+exports[`executeKeypadTask > resolveKeyId > Error:{ knobId: 2, knobAction: 'Left' } 1`] = `"ConfigurationError: invalid knob ID: 2. It must be between 1 and 1"`;
+
+exports[`executeKeypadTask > resolveKeyId > Error:{} 1`] = `"ConfigurationError: cannot resolve the key ID. Specify either '--key-id' or both '--knob-id' and '--knob-action'"`;
+
+exports[`executeKeypadTask > runCommand > parse error. show usage 1`] = `
+{
+  "code": 1,
+  "err": "error: option '-i <value>' argument 'xxx' is invalid. It must be a valid integer
+
+Usage: keypad-mapper simple [options]
+
+Options:
+  -i <value>  int (env: KEYPAD_I)
+  -h, --help  display help for command
+",
+  "exit": true,
+  "out": "",
+}
+`;
+
+exports[`executeKeypadTask > runCommand > required option. show usage 1`] = `
+{
+  "code": 1,
+  "err": "error: required option '-i' not specified
+
+
+
+Usage: keypad-mapper simple [options]
+
+Options:
+  -i          int (env: KEYPAD_I)
+  -h, --help  display help for command
+",
+  "exit": true,
+  "out": "",
+}
+`;
+
+exports[`keyMap from keyDef > createKeyActionsFromText > Error 1`] = `"ConfigurationError: cannot convert character '日' at index 0 into a valid KeyAction. Full text: 日本語はないので落ちる"`;
+
+exports[`keyMap from keyDef > parseActionFromText > Error: 1`] = `"ConfigurationError: cannot process the action string. The string cannot be empty"`;
+
+exports[`keyMap from keyDef > parseActionFromText > Error:+Ctrl+X 1`] = `"ConfigurationError: cannot parse modifier keys from: '+Ctrl+X'"`;
+
+exports[`keyMap from keyDef > parseActionFromText > Error:Ctrl 1`] = `"ConfigurationError: cannot resolve the action: 'Ctrl' is unknown"`;
+
+exports[`keyMap from keyDef > parseActionFromText > Error:Xxx 1`] = `"ConfigurationError: cannot resolve the action: 'Xxx' is unknown"`;
+
+exports[`keyMap from keyDef > parseKeyMapFromKeyText > Error: 1`] = `"ConfigurationError: cannot process the action string. The string cannot be empty"`;
+
+exports[`keyMap from keyDef > parseKeyMapFromKeyText > Error:A  1`] = `"ConfigurationError: cannot process the action string. The string cannot be empty"`;
+
+exports[`keyMap from keyDef > parseKeyMapFromKeyText > Error:LButton A 1`] = `"ConfigurationError: cannot set conflicting actions"`;
+
+exports[`keyMap from keyDef > parseKeyMapFromKeyText > Error:LButton LButton 1`] = `"ConfigurationError: cannot process the key map. Only one mouse action is allowed"`;
+
+exports[`keyMap from keyDef > parseKeyMapFromKeyText > Error:MyComputer LButton 1`] = `"ConfigurationError: cannot set conflicting actions"`;
+
+exports[`keyMap from keyDef > parseKeyMapFromKeyText > Error:MyComputer MyComputer 1`] = `"ConfigurationError: cannot process the key map. Only one consumer action is allowed"`;

@@ -1,0 +1,90 @@
+{
+  "name": "keypad-mapper",
+  "version": "1.0.0-alpha.1",
+  "description": "",
+  "keywords": [
+    "keypad",
+    "mini-keyboard",
+    "keymap"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uk-taniyama/keypad-mapper.git"
+  },
+  "author": "uk-taniyama",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/uk-taniyama/keypad-mapper/issues"
+  },
+  "homepage": "https://github.com/uk-taniyama/keypad-mapper#readme",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "bin": {
+    "keypad-mapper": "./dist/cli.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "gen": "tsx src/tools/index.ts",
+    "cli": "tsx src/cli.ts",
+    "doc": "rimraf docs && typedoc",
+    "prepack": "npm run build",
+    "example": "tsx src/example/index.ts",
+    "build": "tsup",
+    "lint": "eslint src",
+    "lint-fix": "eslint --fix src",
+    "test": "vitest",
+    "cover": "vitest --coverage",
+    "web-cover": "http-server -p 8080 coverage/",
+    "web-doc": "http-server -p 8081 docs/",
+    "prepare": "husky"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "lint-staged": {
+    "*.ts": "eslint --fix"
+  },
+  "dependencies": {
+    "commander": "^12.1.0",
+    "debug": "^4.4.0",
+    "json-stringify-pretty-compact": "^4.0.0",
+    "lodash-es": "^4.17.21",
+    "read-pkg": "^9.0.1",
+    "with-hid": "^1.0.0-alpha.3"
+  },
+  "devDependencies": {
+    "@microsoft/api-extractor": "^7.48.1",
+    "@types/debug": "^4.1.12",
+    "@types/lodash-es": "^4.17.12",
+    "@types/node": "^22.10.2",
+    "@typescript-eslint/eslint-plugin": "^7.18.0",
+    "@typescript-eslint/parser": "^7.18.0",
+    "@vitest/coverage-v8": "^2.1.8",
+    "eslint": "^8.57.1",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-airbnb-typescript": "^18.0.0",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^6.2.0",
+    "eslint-plugin-unused-imports": "^3.2.0",
+    "http-server": "^14.1.1",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.2.11",
+    "rimraf": "^6.0.1",
+    "tsup": "^8.3.5",
+    "tsx": "^4.19.2",
+    "typedoc": "^0.27.6",
+    "typedoc-github-theme": "^0.2.0",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  }
+}
