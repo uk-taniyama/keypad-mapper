@@ -16,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/uk-taniyama/keypad-mapper/issues"
   },
-  "homepage": "https://github.com/uk-taniyama/keypad-mapper#readme",
+  "homepage": "https://uk-taniyama.github.io/keypad-mapper/",
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -35,7 +35,7 @@
   "scripts": {
     "gen": "tsx src/tools/index.ts",
     "cli": "tsx src/cli.ts",
-    "doc": "rimraf docs && typedoc",
+    "doc": "rimraf docs && tsx src/tools/patch-readme.ts && typedoc",
     "prepack": "npm run build",
     "example": "tsx src/example/index.ts",
     "build": "tsup",

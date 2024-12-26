@@ -8,6 +8,7 @@ To install the necessary dependencies, run the following command:
 
 ```sh
 npm install mini-keymapper tsx
+```
 
 ## Script
 
@@ -21,7 +22,7 @@ npx tsx index.ts
 
 ### Apply the Configuration
 
-To apply the defined key mappings to the keypad, use the ```--apply``` flag:
+To apply the defined key mappings to the keypad, use the `--apply` flag:
 
 
 ```bash
@@ -30,7 +31,8 @@ npx tsx index.ts --apply
 
 ### Code Example
 
-Here's an example of how to define key mappings in index.ts:
+Here is an example of how to define key mappings in index.ts.
+Specify key definitions using ```defineKeyMap``` as shown below. Keyboard inputs are defined using ``key``, mouse inputs using ``mouse``, and multimedia inputs using ``media``.
 
 ```ts
 // index.ts
@@ -63,13 +65,13 @@ defineKeyMap([
 
 You can interact with the keypad-mapper through the following CLI commands:
 
-```
+```bash
 npx keypad-mapper
 ```
 
 Example Output:
 
-```sh
+```bash
 Usage: keypad-mapper [options] [command]
 
 Options:
@@ -84,3 +86,10 @@ Commands:
   help [command]                display help for command
 ```
 
+## Repository
+
+For more information, source code, and issue tracking, visit the [GitHub](https://github.com/uk-taniyama/keypad-mapper/) repository.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
