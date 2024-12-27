@@ -1,6 +1,6 @@
 {
   "entryPoints": ["src/index.ts"],
-  "readme": "README.docs.md",
-  "out": "docs",
+  "readme": "output/README.docs.md",
+  "out": "output/docs",
   "plugin": ["typedoc-github-theme"]
 }

@@ -25,7 +25,9 @@
   "include": [
     "src", 
     "example",
+    ".eslintrc.cjs",
     "tsup.config.ts",
-    "vitest.config.ts"
+    "vitest.config.ts",
+    "release.config.js",
   ],
 }
